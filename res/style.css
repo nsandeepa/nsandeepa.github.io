@@ -68,10 +68,30 @@
     }
 }
 
+.form-control {
+    border-radius: 2px;
+    border-color: transparent;
+}
+
+input[type="text"]:focus {
+    border-color: transparent;
+    outline: 0;
+    outline: thin dotted \9;
+    /* IE6-9 */
+
+    -webkit-box-shadow: inset 0 1px 1px transparent, 0 0 8px transparent;
+    -moz-box-shadow: inset 0 1px 1px transparent, 0 0 8px transparent;
+    box-shadow: inset 0 1px 1px transparent, 0 0 8px transparent;
+}
+
 .btn {
     border-radius: 2px;
 }
 
+.btn-dark {
+    background-color: #8b2635;
+    color: #e0e2db;
+}
 body {
     background-color: #f7f7f7;
 }
@@ -108,25 +128,47 @@ body {
 .card .title {
     text-align: left;
 }
-.margin-right {
-    margin-right: 20px;
-}
-.margin-left-right {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-.margin-left {
-    margin-left: 20px;
-}
-
 .margin-around {
     margin: 25px;
 }
+.beforeAnim {
 
-.cardAnimation {
-    -webkit-animation: cardAnim 0.25s ease-in;
-    -o-animation: cardAnim 0.25s ease-in;
-    animation: cardAnim 0.25s ease-in;
+}
+.cardAnimation1 {
+    opacity: 0;
+    -webkit-animation: cardAnim 0.5s ease-in-out forwards;
+    -o-animation: cardAnim 0.5s ease-in-out forwards;
+    animation: cardAnim 0.5s ease-in-out forwards;
+}
+.cardAnimation2 {
+    opacity: 0;
+    -webkit-animation: cardAnim 0.5s ease-in-out forwards;
+    -o-animation: cardAnim 0.5s ease-in-out forwards;
+    animation: cardAnim 0.5s ease-in-out forwards;
+    -webkit-animation-delay: 0.125s;
+    -moz-animation-delay: 0.125s;
+    -o-animation-delay: 0.125s;
+    animation-delay: 0.125s;
+}
+.cardAnimation3 {
+    opacity: 0;
+    -webkit-animation: cardAnim 0.5s ease-in-out forwards;
+    -o-animation: cardAnim 0.5s ease-in-out forwards;
+    animation: cardAnim 0.5s ease-in-out forwards;
+    -webkit-animation-delay: 0.25s;
+    -moz-animation-delay: 0.25s;
+    -o-animation-delay: 0.25s;
+    animation-delay: 0.25s;
+}
+.cardAnimation4 {
+    opacity: 0;
+    -webkit-animation: cardAnim 0.5s ease-in-out forwards;
+    -o-animation: cardAnim 0.5s ease-in-out forwards;
+    animation: cardAnim 0.5s ease-in-out forwards;
+    -webkit-animation-delay: 0.325s;
+    -moz-animation-delay: 0.325s;
+    -o-animation-delay: 0.325s;
+    animation-delay: 0.325s;
 }
 @keyframes cardAnim {
     from {opacity: 0;}
@@ -139,4 +181,8 @@ body {
 @-o-keyframes cardAnim {
     from {opacity: 0;}
     to {opacity: 1;}
+}
+
+.noPadding {
+    padding: 0px;
 }
