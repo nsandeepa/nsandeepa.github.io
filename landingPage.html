@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anti-Lonely</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="res/css/bootstrap.css" />
+    <link rel="stylesheet" href="res/style.css">
+    <script src="res/js/jquery-3.2.1.min.js"></script>
+    <script src="res/js/bootstrap.js"></script>
+    <style>
+        .anim {
+            visibility: hidden;
+        }
+    </style>
+    <script src="res/js/scrollreveal.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="col-sm-6 col-sm-offset-3 jumbotron anim" id="content1" data-scrollreveal="wait 1s">
+            <h1>Hello New Guy</h1>
+        </div>
+        <div class="col-sm-6 col-sm-offset-3 jumbotron anim" id="content2" data-scrollreveal="enter top over 3s after 0.5s">
+            <h1>Hello New Guy</h1>
+        </div>
+        <div class="col-sm-6 col-sm-offset-3 jumbotron anim" id="content3" data-scrollreveal="enter top over 3s after 0.5s">
+            <h1>Hello New Guy</h1>
+        </div>
+        <div class="col-sm-6 col-sm-offset-3 jumbotron anim" id="content4" data-scrollreveal="enter top over 3s after 0.5s">
+            <h1>Hello New Guy</h1>
+        </div>
+        <div class="col-sm-6 col-sm-offset-3 jumbotron anim" id="content5" data-scrollreveal="enter top over 3s after 0.5s">
+            <h1>Hello New Guy</h1>
+        </div>
+        <div data-scroll-reveal="ease in over 3s after 0.5s"> Foo </div>
+    </div>
+    <script>
+        window.sr = new ScrollReveal();
+        sr.reveal("#content1");
+        sr.reveal("#content2");
+        sr.reveal("#content3");
+        sr.reveal("#content4");
+        sr.reveal("#content5");
+    </script>
+</body>
+</html>

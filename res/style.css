@@ -1,0 +1,142 @@
+/* navbar */
+.navbar-default {
+    background-color: #2e3532;
+    border-color: transparent;
+}
+/* Title */
+.navbar-default .navbar-brand {
+    color: #e0e2db;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #969696;
+}
+/* Link */
+.navbar-default .navbar-nav > li > a {
+    color: #e0e2db;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #969696;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #e0e2db;
+    background-color: #8b2635;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #e0e2db;
+    background-color: #8b2635;
+}
+/* Caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #e0e2db;
+    border-bottom-color: #e0e2db;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #969696;
+    border-bottom-color: #969696;
+}
+.navbar-default .navbar-nav > .open > a .caret,
+.navbar-default .navbar-nav > .open > a:hover .caret,
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #e0e2db;
+    border-bottom-color: #e0e2db;
+}
+/* Mobile version */
+.navbar-default .navbar-toggle {
+    border-color: #DDD;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #DDD;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #CCC;
+}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #e0e2db;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #969696;
+    }
+}
+
+.btn {
+    border-radius: 2px;
+}
+
+body {
+    background-color: #f7f7f7;
+}
+
+.bodyPadding {
+    padding-top: 50px;
+}
+
+.landingBody {
+    background-color: #0f0f0f;
+}
+
+.landingText {
+    margin-top: 50px;
+}
+
+.card {
+    color: #e0e2db;
+    padding: 10px;
+    box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.2), 2px 2px 3px 0 rgba(0, 0, 0, 0.2);
+}
+.card-primary {
+    background-color: #2e3532;
+    border: 1px solid #2e3532;
+}
+.card-secondary {
+    background-color: #44355b;
+    border-color: #44355b;
+}
+
+.card .title-icon {
+    text-align: right;
+}
+.card .title {
+    text-align: left;
+}
+.margin-right {
+    margin-right: 20px;
+}
+.margin-left-right {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.margin-left {
+    margin-left: 20px;
+}
+
+.margin-around {
+    margin: 25px;
+}
+
+.cardAnimation {
+    -webkit-animation: cardAnim 0.25s ease-in;
+    -o-animation: cardAnim 0.25s ease-in;
+    animation: cardAnim 0.25s ease-in;
+}
+@keyframes cardAnim {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@-webkit-keyframes cardAnim {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@-o-keyframes cardAnim {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

@@ -1,0 +1,121 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="res/css/font-awesome.css" />
+	<link rel="stylesheet" href="res/css/bootstrap.css" />
+	<link rel="stylesheet" href="res/style.css">
+	<script src="res/js/jquery-3.2.1.min.js"></script>
+	<script src="res/js/bootstrap.js"></script>
+	<script src="res/js/scrollreveal.js"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button class="btn navbar-toggle" data-toggle="collapse" data-target="#collapseNavbar" aria-expanded="false" aria-controls="collapseNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">
+					<span class="glyphicon glyphicon-globe"></span>
+					<span>Propozer</span>
+				</a>
+			</div>
+			<div class="collapse navbar-collapse" id="collapseNavbar">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Messages</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" style="padding: 9px;" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							<img class="img-circle" width="32px" height="32px" src="res/img/profile.png">
+							<span>Nilupul Sandeepa</span>
+							<span class="caret" style="margin: 0px; padding: 0px;"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="#"><span class="glyphicon glyphicon-cog"></span> Profile Settings</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-lock"></span> Security & Privacy</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container bodyPadding">
+		<div class="row">
+			<div class="col-sm-1"></div>
+			<a href="#" data-toggle="modal" data-target="#myModal">
+				<div id="card1" class="col-sm-2 card card-primary margin-around cardAnimation">
+					<h3 class="title-icon"><span class="glyphicon glyphicon-user"></span></h3>
+					<h4 class="title">54</h4>
+					<h4><small>PROFILE VIEWS</small></h4>
+				</div>
+			</a>
+			<a href="#" data-toggle="modal" data-target="#myModal">
+				<div id="card2" class="col-sm-2 card card-secondary margin-around cardAnimation">
+					<h3 class="title-icon"><span class="glyphicon glyphicon-alert"></span></h3>
+					<h4 class="title">15</h4>
+					<h4><small>NEW NOTIFICATIONS</small></h4>
+				</div>
+			</a>
+			<a href="#" data-toggle="modal" data-target="#myModal">
+				<div id="card3" class="col-sm-2 card card-secondary margin-around cardAnimation">
+					<h3 class="title-icon"><span class="glyphicon glyphicon-comment"></span></h3>
+					<h4 class="title">12</h4>
+					<h4><small>NEW MESSAGES</small></h4>
+				</div>
+			</a>
+			<a href="#" data-toggle="modal" data-target="#myModal">
+				<div id="card4" class="col-sm-2 card card-primary margin-around cardAnimation">
+					<h3 class="title-icon"><span class="glyphicon glyphicon-hand-up"></span></h3>
+					<h4 class="title">3</h4>
+					<h4><small>NEW SUGGESTIONS</small></h4>
+				</div>
+			</a>
+			<div class="col-sm-1"></div>
+		</div>
+	</div>
+	</div>
+
+
+	<div class="container">
+		<div class="row">
+			<div class="jumbotron text-center" data-scroll-reveal="enter left and move 20px over 1s">
+				<h1>Hello Bootstrap</h1>
+				<p>This is fucked up!</p>
+				<!-- Button trigger modal -->
+				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+					Launch demo modal
+				</button>
+
+				<!-- Modal -->
+				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+							</div>
+							<div class="modal-body">
+								Hello This is what i am looking for cool eh??
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
