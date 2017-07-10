@@ -66,6 +66,12 @@
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
         color: #969696;
     }
+    .carousel-indicators {
+        visibility: hidden;
+    }
+    .carousel-caption {
+        visibility: hidden;
+    }
 }
 
 .form-control {
