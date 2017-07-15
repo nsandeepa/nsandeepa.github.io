@@ -115,26 +115,34 @@ body {
 }
 
 .card {
+    text-decoration: none;
     color: #e0e2db;
-    width: 200px;
-    padding: 10px;
-    box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.2), 2px 2px 3px 0 rgba(0, 0, 0, 0.2);
+    padding: 15px;
 }
-@media (max-width: 767px) {
-    .card {
-        color: #e0e2db;
-        width: 250px;
-        padding: 10px;
-        box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.2), 2px 2px 3px 0 rgba(0, 0, 0, 0.2);
-    }
+.card a {
+    text-decoration: none;
+    color: #e0e2db;
+}
+.card a:hover {
+    text-decoration: none;
 }
 .card-primary {
     background-color: #2e3532;
-    border: 1px solid #2e3532;
+    border: #2e3532;
+    padding: 10px;
+    box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.2), 2px 2px 3px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
 }
 .card-secondary {
     background-color: #44355b;
     border-color: #44355b;
+    padding: 10px;
+    box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.2), 2px 2px 3px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.card-primary:hover, .card-secondary:hover {
+    box-shadow: 5px 5px 3px 0 rgba(0, 0, 0, 0.2), 5px 5px 3px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card .title-icon {
@@ -142,12 +150,6 @@ body {
 }
 .card .title {
     text-align: left;
-}
-.margin-around {
-    margin: 15px;
-}
-.beforeAnim {
-
 }
 .cardAnimation1 {
     opacity: 0;
@@ -197,12 +199,11 @@ body {
     from {opacity: 0;}
     to {opacity: 1;}
 }
-#cardContainer {
+.cardContainer {
     justify-content: center;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
-
 
 .noPadding {
     padding: 0px;
