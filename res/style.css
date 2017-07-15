@@ -116,8 +116,17 @@ body {
 
 .card {
     color: #e0e2db;
+    width: 200px;
     padding: 10px;
     box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.2), 2px 2px 3px 0 rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 767px) {
+    .card {
+        color: #e0e2db;
+        width: 250px;
+        padding: 10px;
+        box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.2), 2px 2px 3px 0 rgba(0, 0, 0, 0.2);
+    }
 }
 .card-primary {
     background-color: #2e3532;
@@ -135,7 +144,7 @@ body {
     text-align: left;
 }
 .margin-around {
-    margin: 25px;
+    margin: 15px;
 }
 .beforeAnim {
 
@@ -188,6 +197,12 @@ body {
     from {opacity: 0;}
     to {opacity: 1;}
 }
+#cardContainer {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 
 .noPadding {
     padding: 0px;
