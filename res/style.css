@@ -90,6 +90,11 @@ input[type="text"]:focus {
     box-shadow: inset 0 1px 1px transparent, 0 0 8px transparent;
 }
 
+body {
+    background-image: url("img/back.jpg");
+    background-size: 150px;
+}
+
 .btn {
     border-radius: 2px;
 }
@@ -103,7 +108,7 @@ body {
 }
 
 .bodyPadding {
-    padding-top: 75px;
+    padding-top: 65px;
 }
 
 .landingBody {
@@ -162,30 +167,30 @@ body {
     -webkit-animation: cardAnim 0.5s ease-in-out forwards;
     -o-animation: cardAnim 0.5s ease-in-out forwards;
     animation: cardAnim 0.5s ease-in-out forwards;
-    -webkit-animation-delay: 0.125s;
-    -moz-animation-delay: 0.125s;
-    -o-animation-delay: 0.125s;
-    animation-delay: 0.125s;
+    -webkit-animation-delay: 0.15s;
+    -moz-animation-delay: 0.15s;
+    -o-animation-delay: 0.15s;
+    animation-delay: 0.15s;
 }
 .cardAnimation3 {
     opacity: 0;
     -webkit-animation: cardAnim 0.5s ease-in-out forwards;
     -o-animation: cardAnim 0.5s ease-in-out forwards;
     animation: cardAnim 0.5s ease-in-out forwards;
-    -webkit-animation-delay: 0.25s;
-    -moz-animation-delay: 0.25s;
-    -o-animation-delay: 0.25s;
-    animation-delay: 0.25s;
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    -o-animation-delay: 0.3s;
+    animation-delay: 0.3s;
 }
 .cardAnimation4 {
     opacity: 0;
     -webkit-animation: cardAnim 0.5s ease-in-out forwards;
     -o-animation: cardAnim 0.5s ease-in-out forwards;
     animation: cardAnim 0.5s ease-in-out forwards;
-    -webkit-animation-delay: 0.325s;
-    -moz-animation-delay: 0.325s;
-    -o-animation-delay: 0.325s;
-    animation-delay: 0.325s;
+    -webkit-animation-delay: 0.45s;
+    -moz-animation-delay: 0.45s;
+    -o-animation-delay: 0.45s;
+    animation-delay: 0.45s;
 }
 @keyframes cardAnim {
     from {opacity: 0;}
@@ -207,4 +212,11 @@ body {
 
 .noPadding {
     padding: 0px;
+}
+
+.hrDivider {
+    height: 2px;
+    background-color: #2e3532;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
