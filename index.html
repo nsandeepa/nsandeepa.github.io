@@ -74,7 +74,7 @@
 					<img class="img-responsive" src="res/img/c3.jpg">
 					<div class="carousel-caption">
 						<h1>Propozer.lk</h1>
-						<h4>Find Your Soulemate Just in Minute</h4>
+						<h4>Find Your Soulmate Just in Minute</h4>
 						<a href="#search" class="btn btn-dark searchScroll"><h5>Search Now</h5></a>
 					</div>
 				</div>
@@ -82,7 +82,7 @@
 					<img class="img-responsive" src="res/img/c2.jpg">
 					<div class="carousel-caption">
 						<h1>Propozer.lk</h1>
-						<h4>Find Your Soulemate Just in Minute</h4>
+						<h4>Find Your Soulmate Just in Minute</h4>
 						<a href="#search" class="btn btn-dark searchScroll"><h5>Search Now</h5></a>
 					</div>
 				</div>
@@ -90,7 +90,7 @@
 					<img class="img-responsive" src="res/img/c1.jpg">
 					<div class="carousel-caption">
 						<h1>Propozer.lk</h1>
-						<h4>Find Your Soulemate Just in Minute</h4>
+						<h4>Find Your Soulmate Just in Minute</h4>
 						<a href="#search" class="btn btn-dark searchScroll"><h5>Search Now</h5></a>
 					</div>
 				</div>
@@ -163,114 +163,115 @@
 	<div class="container">
 		<div class="row">
 			<div class="jumbotron text-center">
-				<h2>Find Your Soulemate Just In Minute</h2>
+				<h2>Find Your Soulmate Just In Minute</h2>
 				<br />
-				<p class="center-block">
-					<form>
-						<table class="col-sm-12 table-responsive">
+				<form>
+					<table class="col-sm-12 table table-bordered table-responsive">
+						<div class="form-group">
 							<tr>
 								<td class="col-sm-3 text-center">Looking for</td>
 								<td class="col-sm-3 text-center">
 									<select class="form-control">
-										<option>Male</option>
-										<option>Female</option>
+										<option value="male">Male</option>
+										<option value="female">Female</option>
 									</select>
 								</td>
 								<td class="col-sm-3 text-center">Age</td>
 								<td class="col-sm-3 text-center">
-									<select class="form-control" id="ageSelector"></select>
+									<select class="form-control" id="ageSelector">
+										<option value="any" selected>Any</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td class="col-sm-3 text-center">Education</td>
+								<td class="col-sm-3 text-center">
+									<select class="form-control">
+										<option value="any" selected>Any</option>
+										<option value="ol">O/L Pass</option>
+										<option value="al">A/L Pass</option>
+										<option value="bsc">Bachelors</option>
+										<option value="msc">Masters</option>
+										<option value="phd">Doctorate</option>
+										<option value="other">Other</option>
+									</select>
+								</td>
+								<td class="col-sm-3 text-center">Monthly Salary</td>
+								<td class="col-sm-3 text-center">
+									<select class="form-control">
+										<option value="nojob">Not Working</option>
+										<option value="0-10">0 - 10k LKR/M</option>
+										<option value="10-50">10k - 50k LKR/M</option>
+										<option value="50-100">50k - 100k LKR/M</option>
+										<option value="100-300">100k - 300k</option>
+										<option value="300+">Above 300k LKR/M</option>
+									</select>
+								</td>
+							</tr>
+						</div>
+					</table>
+					<button type="button" class="btn btn-light btn-lg" data-toggle="collapse" data-target="#advanceSearch" aria-expanded="false" aria-controls="advanceSearch">Advance</button>
+					<br />
+					<br />
+					<div class="collapse" id="advanceSearch">
+						<table class="col-sm-12 table table-bordered table-responsive">
+							<tr>
+								<td class="col-sm-3 text-center">Hobbies</td>
+								<td class="col-sm-3 text-center">
+									<select class="form-control">
+										<option value="reading-books">Reading Books</option>
+										<option value="watching-movies">Watching Movies</option>
+									</select>
+								</td>
+								<td class="col-sm-3 text-center">Occupation</td>
+								<td class="col-sm-3 text-center">
+									<select class="form-control">
+										<option value="software-engineer">Software Engineer</option>
+										<option value="civil-engineer">Civil Engineer</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td class="col-sm-3 text-center">Location</td>
+								<td class="col-sm-3 text-center">
+									<select class="form-control">
+										<option value="galle">Galle</option>
+										<option value="colombo">Colombo</option>
+									</select>
+								</td>
+								<td class="col-sm-3 text-center">Status</td>
+								<td class="col-sm-3 text-center">
+									<select class="form-control">
+										<option value="single">Single</option>
+										<option value="divorced">Divorced</option>
+									</select>
 								</td>
 							</tr>
 						</table>
-					</form>
-				</p>
-				<!-- Button trigger modal -->
-				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-					Launch demo modal
-				</button>
+					</div>
+				</form>
+				<button class="btn btn-light btn-block">Search</button>
+			</div>
+		</div>
 
-				<!-- Modal -->
-				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-								<h4 class="modal-title" id="myModalLabel">Modal title</h4>
-							</div>
-							<div class="modal-body">
-								Hello This is what i am looking for cool eh??
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-								<button type="button" class="btn btn-primary">Save changes</button>
-							</div>
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+						</div>
+						<div class="modal-body">
+							Hello This is what i am looking for cool eh??
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Save changes</button>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-
-
-		<div class="row">
-			<div class="jumbotron text-center">
-				<h1>Hello Bootstrap</h1>
-				<p>This is fucked up!</p>
-				<!-- Button trigger modal -->
-				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-					Launch demo modal
-				</button>
-
-				<!-- Modal -->
-				<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-								<h4 class="modal-title">Modal title</h4>
-							</div>
-							<div class="modal-body">
-								Hello This is what i am looking for cool eh??
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-								<button type="button" class="btn btn-primary">Save changes</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="jumbotron text-center" data-scroll-reveal="enter left and move 20px over 1s">
-				<h1>Hello Bootstrap</h1>
-				<p>This is fucked up!</p>
-				<!-- Button trigger modal -->
-				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-					Launch demo modal
-				</button>
-
-				<!-- Modal -->
-				<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-								<h4 class="modal-title">Modal title</h4>
-							</div>
-							<div class="modal-body">
-								Hello This is what i am looking for cool eh??
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-								<button type="button" class="btn btn-primary">Save changes</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 	<script>
 		for(var i = 16; i <= 60; i++) {
             $("#ageSelector").append('<option value="' + i + '">' + i + '</option>');

@@ -92,6 +92,27 @@ input[type="text"]:focus {
     box-shadow: inset 0 1px 1px transparent, 0 0 8px transparent;
 }
 
+.jumbotron {
+    background-color: #8b2635;
+    color: #e0e2db;
+}
+
+.jumbotron .table {
+    color: #e0e2db;
+    font-weight: bold;
+    border-left: transparent;
+    border-right: transparent;
+    border-collapse: collapse;
+}
+
+.jumbotron .table-bordered td{
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom: 1px solid #e0e2db;
+    border-top: 1px solid #e0e2db;
+    border-collapse: collapse;
+}​
+
 body {
     background-image: url("img/back2.png");
     background-size: 150px;
@@ -103,6 +124,16 @@ body {
 
 .btn-dark {
     background-color: #8b2635;
+    color: #e0e2db;
+}
+
+.btn-light {
+    background-color: #2e3532;
+    color: #e0e2db;
+}
+
+.btn-light:hover, .btn-light:focus {
+    background-color: #1d2320;
     color: #e0e2db;
 }
 
