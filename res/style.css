@@ -66,6 +66,9 @@
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
         color: #969696;
     }
+}
+
+@media (max-width: 767px) {
     .carousel-indicators {
         visibility: hidden;
     }
@@ -73,7 +76,6 @@
         visibility: hidden;
     }
 }
-
 .form-control {
     border-radius: 2px;
     border-color: transparent;
@@ -91,7 +93,7 @@ input[type="text"]:focus {
 }
 
 body {
-    background-image: url("img/back.png");
+    background-image: url("img/back2.png");
     background-size: 150px;
 }
 
@@ -102,6 +104,10 @@ body {
 .btn-dark {
     background-color: #8b2635;
     color: #e0e2db;
+}
+
+.btn-dark:hover {
+    color: #2e3532;
 }
 body {
     background-color: #f7f7f7;
@@ -147,7 +153,7 @@ body {
 }
 
 .card-primary:hover, .card-secondary:hover {
-    box-shadow: 5px 5px 3px 0 rgba(0, 0, 0, 0.2), 5px 5px 3px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 6px 6px 5px 0 rgba(0, 0, 0, 0.2), 6px 6px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card .title-icon {

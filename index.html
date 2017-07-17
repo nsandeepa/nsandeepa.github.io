@@ -2,7 +2,6 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="res/css/font-awesome.css" />
 	<link rel="stylesheet" href="res/css/bootstrap.css" />
 	<link rel="stylesheet" href="res/style.css">
 	<script src="res/js/jquery-3.2.1.min.js"></script>
@@ -22,7 +21,7 @@
 				</button>
 				<a class="navbar-brand" href="#">
 					<span class="glyphicon glyphicon-globe"></span>
-					<span>Propozer</span>
+					<span>Propozer.lk</span>
 				</a>
 			</div>
 			<div class="collapse navbar-collapse" id="collapseNavbar">
@@ -74,19 +73,25 @@
 				<div class="item active">
 					<img class="img-responsive" src="res/img/c3.jpg">
 					<div class="carousel-caption">
-						Propozer.lk
+						<h1>Propozer.lk</h1>
+						<h4>Find Your Soulemate Just in Minute</h4>
+						<a href="#search" class="btn btn-dark searchScroll"><h5>Search Now</h5></a>
 					</div>
 				</div>
 				<div class="item">
 					<img class="img-responsive" src="res/img/c2.jpg">
 					<div class="carousel-caption">
-						Propozer.lk
+						<h1>Propozer.lk</h1>
+						<h4>Find Your Soulemate Just in Minute</h4>
+						<a href="#search" class="btn btn-dark searchScroll"><h5>Search Now</h5></a>
 					</div>
 				</div>
 				<div class="item">
 					<img class="img-responsive" src="res/img/c1.jpg">
 					<div class="carousel-caption">
-						Propozer.lk
+						<h1>Propozer.lk</h1>
+						<h4>Find Your Soulemate Just in Minute</h4>
+						<a href="#search" class="btn btn-dark searchScroll"><h5>Search Now</h5></a>
 					</div>
 				</div>
 			</div>
@@ -150,16 +155,35 @@
 	<!--Horizontal Divider Start-->
 	<div class="container">
 	<div class="row">
-	<div class="col-sm-10 col-sm-offset-1 hrDivider"></div>
+	<div class="col-sm-10 col-sm-offset-1 hrDivider" id="search"></div>
 	</div>
 	</div>
 	<!--Horizontal Divider End-->
 
 	<div class="container">
 		<div class="row">
-			<div class="jumbotron text-center" data-scroll-reveal="enter left and move 20px over 1s">
-				<h1>Hello Bootstrap</h1>
-				<p>This is fucked up!</p>
+			<div class="jumbotron text-center">
+				<h2>Find Your Soulemate Just In Minute</h2>
+				<br />
+				<p class="center-block">
+					<form>
+						<table class="col-sm-12 table-responsive">
+							<tr>
+								<td class="col-sm-3 text-center">Looking for</td>
+								<td class="col-sm-3 text-center">
+									<select class="form-control">
+										<option>Male</option>
+										<option>Female</option>
+									</select>
+								</td>
+								<td class="col-sm-3 text-center">Age</td>
+								<td class="col-sm-3 text-center">
+									<select class="form-control" id="ageSelector"></select>
+								</td>
+							</tr>
+						</table>
+					</form>
+				</p>
 				<!-- Button trigger modal -->
 				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
 					Launch demo modal
@@ -185,6 +209,85 @@
 				</div>
 			</div>
 		</div>
+
+
+		<div class="row">
+			<div class="jumbotron text-center">
+				<h1>Hello Bootstrap</h1>
+				<p>This is fucked up!</p>
+				<!-- Button trigger modal -->
+				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+					Launch demo modal
+				</button>
+
+				<!-- Modal -->
+				<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h4 class="modal-title">Modal title</h4>
+							</div>
+							<div class="modal-body">
+								Hello This is what i am looking for cool eh??
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="jumbotron text-center" data-scroll-reveal="enter left and move 20px over 1s">
+				<h1>Hello Bootstrap</h1>
+				<p>This is fucked up!</p>
+				<!-- Button trigger modal -->
+				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+					Launch demo modal
+				</button>
+
+				<!-- Modal -->
+				<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h4 class="modal-title">Modal title</h4>
+							</div>
+							<div class="modal-body">
+								Hello This is what i am looking for cool eh??
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
+	<script>
+		for(var i = 16; i <= 60; i++) {
+            $("#ageSelector").append('<option value="' + i + '">' + i + '</option>');
+		}
+		$(document).ready(function () {
+			$(".searchScroll").on('click', function (event) {
+				if (this.hash !== "") {
+				    event.preventDefault();
+				    var hash = this.hash;
+				    $('html, body').animate({
+				        scrollTop: $(hash).offset().top
+					}, 1000, function () {
+						window.location.hash = hash;
+                    });
+				}
+            });
+        });
+	</script>
 </body>
 </html>
